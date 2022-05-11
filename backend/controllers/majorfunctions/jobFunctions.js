@@ -12,6 +12,7 @@ function getJobStatus(start_date, is_completed_status, main_category) {
   const oneDay = 1000 * 60 * 60 * 24;
   const diffInTime = date2.getTime() - date1.getTime();
   const diffInDays = diffInTime / oneDay;
+  console.log(diffInDays);
   if (diffInDays < 2) {
     return 'Pending';
   }
@@ -33,6 +34,7 @@ function getHowLate(start_date, is_completed_status, main_category) {
   const oneDay = 1000 * 60 * 60 * 24;
   const diffInTime = date2.getTime() - date1.getTime();
   const diffInDays = diffInTime / oneDay;
+  console.log(diffInDays);
   if (diffInDays < 2) {
     return 'Under 48 Hours';
   }

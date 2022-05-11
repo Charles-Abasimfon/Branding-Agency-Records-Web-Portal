@@ -8,10 +8,10 @@ function AllAdmin() {
       <div className='top'>
         <div className='title-container'>
           <BadgeOutlinedIcon className='title-icon' />
-          <h2>All Recorders & Moderators</h2>
+          <h2>Recorders & Moderators</h2>
         </div>
         <Link className='btn' to='/recorders-moderators/add-new'>
-          Add New
+          Add
         </Link>
       </div>
 

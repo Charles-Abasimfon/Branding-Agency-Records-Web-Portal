@@ -100,6 +100,7 @@
       justify-content: center;
       @include tablet {
         flex-wrap: wrap;
+        margin-top: 5px;
       }
 
       .btn,

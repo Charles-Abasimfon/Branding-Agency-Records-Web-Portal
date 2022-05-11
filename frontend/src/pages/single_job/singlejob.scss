@@ -105,6 +105,7 @@
       justify-content: center;
       @include tablet {
         flex-wrap: wrap;
+        margin-top: 5px;
       }
 
       .telegram-icon {
@@ -305,6 +306,7 @@
       @include mobile {
         padding-left: 10px;
         padding-right: 10px;
+        margin-top: 0px;
       }
       .log {
         display: flex;
@@ -314,6 +316,9 @@
         background-color: #fff;
         box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
         margin: 10px;
+        @include mobile {
+          margin: 10px 0px;
+        }
         .log-date {
           font-weight: 400;
           font-size: 14px;

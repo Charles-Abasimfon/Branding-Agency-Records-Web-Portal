@@ -1,4 +1,4 @@
-const moment = require('moment');
+const moment = require('moment-timezone');
 
 /*@Desc This function serves to get the job status  */
 function getJobStatus(start_date, is_completed_status, main_category) {
@@ -8,8 +8,8 @@ function getJobStatus(start_date, is_completed_status, main_category) {
   if (main_category === 'Website Development') {
     return 'Pending';
   }
-  const date1 = moment(start_date);
-  const date2 = moment();
+  const date1 = moment.tz(start_date, 'Africa/Lagos');
+  const date2 = moment.tz('Africa/Lagos');
   var duration = moment.duration(date2.diff(date1));
   var diffInDays = duration.asDays();
   if (diffInDays < 2) {
@@ -28,8 +28,8 @@ function getHowLate(start_date, is_completed_status, main_category) {
   if (main_category === 'Website Development') {
     return moment(start_date).fromNow();
   }
-  const date1 = moment(start_date);
-  const date2 = moment();
+  const date1 = moment.tz(start_date, 'Africa/Lagos');
+  const date2 = moment.tz('Africa/Lagos');
   var duration = moment.duration(date2.diff(date1));
   var diffInDays = duration.asDays();
   if (diffInDays < 2) {

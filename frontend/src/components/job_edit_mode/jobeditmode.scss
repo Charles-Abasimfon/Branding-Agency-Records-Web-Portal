@@ -1,0 +1,43 @@
+@import '../../global_styles//main.scss';
+.item-value {
+  display: inline-flex;
+  align-items: center;
+}
+.edit-icon {
+  font-size: 28px;
+  margin-left: 5px;
+  color: $light-secondarylight-color;
+  cursor: pointer;
+  background-color: $light-bg-light-color;
+  border-radius: 50%;
+  padding: 5px;
+
+  &:hover {
+    color: $light-secondarydark-color;
+    background-color: #93c5fd;
+  }
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #e5e7eb;
+  padding: 0px 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #374151;
+  outline: none;
+  cursor: auto;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  background-color: #f9fafb;
+  margin-bottom: 20px;
+}
+
+textarea {
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

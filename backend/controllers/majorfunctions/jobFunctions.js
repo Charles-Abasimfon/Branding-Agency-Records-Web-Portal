@@ -26,16 +26,16 @@ function getHowLate(start_date, is_completed_status, main_category) {
     return 'Completed';
   }
   if (main_category === 'Website Development') {
-    return moment(start_date).fromNow();
+    return moment.tz(start_date, 'Africa/Lagos').fromNow();
   }
   const date1 = moment.tz(start_date, 'Africa/Lagos');
   const date2 = moment.tz('Africa/Lagos');
   var duration = moment.duration(date2.diff(date1));
   var diffInDays = duration.asDays();
   if (diffInDays < 2) {
-    return moment(start_date).fromNow();
+    return moment.tz(start_date, 'Africa/Lagos').fromNow();
   } else {
-    return moment(start_date).fromNow();
+    return moment.tz(start_date, 'Africa/Lagos').fromNow();
   }
 }
 

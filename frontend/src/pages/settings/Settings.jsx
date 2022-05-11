@@ -126,238 +126,280 @@ function Settings() {
                     </h2>
                     <h3 className='item-subtitle'>Recorders:</h3>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_recorders_add_new_jobs'
-                        name='can_recorders_add_new_jobs'
-                        checked={settings.can_recorders_add_new_jobs}
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_recorders_add_new_jobs'
+                          name='can_recorders_add_new_jobs'
+                          checked={settings.can_recorders_add_new_jobs}
+                        />
+                      </div>
                       <label for='can_recorders_add_new_jobs'>
                         Can recorders add new jobs.
                       </label>
                     </div>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_recorders_mark_jobs_as_completed'
-                        name='can_recorders_mark_jobs_as_completed'
-                        checked={settings.can_recorders_mark_jobs_as_completed}
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_recorders_mark_jobs_as_completed'
+                          name='can_recorders_mark_jobs_as_completed'
+                          checked={
+                            settings.can_recorders_mark_jobs_as_completed
+                          }
+                        />
+                      </div>
                       <label for='can_recorders_mark_jobs_as_completed'>
                         Can recorders mark jobs as completed.
                       </label>
                     </div>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_recorders_reassign_jobs_to_other_designers'
-                        name='can_recorders_reassign_jobs_to_other_designers'
-                        checked={
-                          settings.can_recorders_reassign_jobs_to_other_designers
-                        }
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_recorders_reassign_jobs_to_other_designers'
+                          name='can_recorders_reassign_jobs_to_other_designers'
+                          checked={
+                            settings.can_recorders_reassign_jobs_to_other_designers
+                          }
+                        />
+                      </div>
                       <label for='can_recorders_reassign_jobs_to_other_designers'>
                         Can recorders re-assign jobs to other designers.
                       </label>
                     </div>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_recorders_change_job_payment_status'
-                        name='can_recorders_change_job_payment_status'
-                        checked={
-                          settings.can_recorders_change_job_payment_status
-                        }
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_recorders_change_job_payment_status'
+                          name='can_recorders_change_job_payment_status'
+                          checked={
+                            settings.can_recorders_change_job_payment_status
+                          }
+                        />
+                      </div>
                       <label for='can_recorders_change_job_payment_status'>
                         Can recorders change job payment status (Half / Full).
                       </label>
                     </div>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_recorders_change_job_main_category'
-                        name='can_recorders_change_job_main_category'
-                        checked={
-                          settings.can_recorders_change_job_main_category
-                        }
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_recorders_change_job_main_category'
+                          name='can_recorders_change_job_main_category'
+                          checked={
+                            settings.can_recorders_change_job_main_category
+                          }
+                        />
+                      </div>
                       <label for='can_recorders_change_job_main_category'>
                         Can recorders change job main category.
                       </label>
                     </div>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_recorders_change_job_sub_categories'
-                        name='can_recorders_change_job_sub_categories'
-                        checked={
-                          settings.can_recorders_change_job_sub_categories
-                        }
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_recorders_change_job_sub_categories'
+                          name='can_recorders_change_job_sub_categories'
+                          checked={
+                            settings.can_recorders_change_job_sub_categories
+                          }
+                        />
+                      </div>
                       <label for='can_recorders_change_job_sub_categories'>
                         Can recorders change job sub categories.
                       </label>
                     </div>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_recorders_change_job_start_date'
-                        name='can_recorders_change_job_start_date'
-                        checked={settings.can_recorders_change_job_start_date}
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_recorders_change_job_start_date'
+                          name='can_recorders_change_job_start_date'
+                          checked={settings.can_recorders_change_job_start_date}
+                        />
+                      </div>
                       <label for='can_recorders_change_job_start_date'>
                         Can recorders change job start date.
                       </label>
                     </div>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_recorders_change_job_additional_info'
-                        name='can_recorders_change_job_additional_info'
-                        checked={
-                          settings.can_recorders_change_job_additional_info
-                        }
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_recorders_change_job_additional_info'
+                          name='can_recorders_change_job_additional_info'
+                          checked={
+                            settings.can_recorders_change_job_additional_info
+                          }
+                        />
+                      </div>
                       <label for='can_recorders_change_job_additional_info'>
                         Can recorders change job additional info.
                       </label>
                     </div>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_recorders_change_client_name'
-                        name='can_recorders_change_client_name'
-                        checked={settings.can_recorders_change_client_name}
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_recorders_change_client_name'
+                          name='can_recorders_change_client_name'
+                          checked={settings.can_recorders_change_client_name}
+                        />
+                      </div>
                       <label for='can_recorders_change_client_name'>
                         Can recorders change client name in jobs.
                       </label>
                     </div>
                     <h3 className='item-subtitle'>Moderators:</h3>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_moderators_add_new_jobs'
-                        name='can_moderators_add_new_jobs'
-                        checked={settings.can_moderators_add_new_jobs}
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_moderators_add_new_jobs'
+                          name='can_moderators_add_new_jobs'
+                          checked={settings.can_moderators_add_new_jobs}
+                        />
+                      </div>
                       <label for='can_moderators_add_new_jobs'>
                         Can moderators add new jobs.
                       </label>
                     </div>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_moderators_mark_jobs_as_completed'
-                        name='can_moderators_mark_jobs_as_completed'
-                        checked={settings.can_moderators_mark_jobs_as_completed}
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_moderators_mark_jobs_as_completed'
+                          name='can_moderators_mark_jobs_as_completed'
+                          checked={
+                            settings.can_moderators_mark_jobs_as_completed
+                          }
+                        />
+                      </div>
                       <label for='can_moderators_mark_jobs_as_completed'>
                         Can moderators mark jobs as completed.
                       </label>
                     </div>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_moderators_reassign_jobs_to_other_designers'
-                        name='can_moderators_reassign_jobs_to_other_designers'
-                        checked={
-                          settings.can_moderators_reassign_jobs_to_other_designers
-                        }
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_moderators_reassign_jobs_to_other_designers'
+                          name='can_moderators_reassign_jobs_to_other_designers'
+                          checked={
+                            settings.can_moderators_reassign_jobs_to_other_designers
+                          }
+                        />
+                      </div>
                       <label for='can_moderators_reassign_jobs_to_other_designers'>
                         Can moderators re-assign jobs to other designers.
                       </label>
                     </div>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_moderators_change_job_payment_status'
-                        name='can_moderators_change_job_payment_status'
-                        checked={
-                          settings.can_moderators_change_job_payment_status
-                        }
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_moderators_change_job_payment_status'
+                          name='can_moderators_change_job_payment_status'
+                          checked={
+                            settings.can_moderators_change_job_payment_status
+                          }
+                        />
+                      </div>
                       <label for='can_moderators_change_job_payment_status'>
                         Can moderators change job payment status (Half / Full).
                       </label>
                     </div>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_moderators_change_job_main_category'
-                        name='can_moderators_change_job_main_category'
-                        checked={
-                          settings.can_moderators_change_job_main_category
-                        }
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_moderators_change_job_main_category'
+                          name='can_moderators_change_job_main_category'
+                          checked={
+                            settings.can_moderators_change_job_main_category
+                          }
+                        />
+                      </div>
                       <label for='can_moderators_change_job_main_category'>
                         Can moderators change job main category.
                       </label>
                     </div>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_moderators_change_job_sub_categories'
-                        name='can_moderators_change_job_sub_categories'
-                        checked={
-                          settings.can_moderators_change_job_sub_categories
-                        }
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_moderators_change_job_sub_categories'
+                          name='can_moderators_change_job_sub_categories'
+                          checked={
+                            settings.can_moderators_change_job_sub_categories
+                          }
+                        />
+                      </div>
                       <label for='can_moderators_change_job_sub_categories'>
                         Can moderators change job sub categories.
                       </label>
                     </div>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_moderators_change_job_start_date'
-                        name='can_moderators_change_job_start_date'
-                        checked={settings.can_moderators_change_job_start_date}
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_moderators_change_job_start_date'
+                          name='can_moderators_change_job_start_date'
+                          checked={
+                            settings.can_moderators_change_job_start_date
+                          }
+                        />
+                      </div>
                       <label for='can_moderators_change_job_start_date'>
                         Can moderators change job start date.
                       </label>
                     </div>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_moderators_change_job_additional_info'
-                        name='can_moderators_change_job_additional_info'
-                        checked={
-                          settings.can_moderators_change_job_additional_info
-                        }
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_moderators_change_job_additional_info'
+                          name='can_moderators_change_job_additional_info'
+                          checked={
+                            settings.can_moderators_change_job_additional_info
+                          }
+                        />
+                      </div>
                       <label for='can_moderators_change_job_additional_info'>
                         Can moderators change job additional info.
                       </label>
                     </div>
                     <div className='checkbox-group'>
-                      <input
-                        type='checkbox'
-                        onChange={(event) => handleFormInputChange(event)}
-                        id='can_moderators_change_client_name'
-                        name='can_moderators_change_client_name'
-                        checked={settings.can_moderators_change_client_name}
-                      />
+                      <div className='checkbox-container'>
+                        <input
+                          type='checkbox'
+                          onChange={(event) => handleFormInputChange(event)}
+                          id='can_moderators_change_client_name'
+                          name='can_moderators_change_client_name'
+                          checked={settings.can_moderators_change_client_name}
+                        />
+                      </div>
                       <label for='can_moderators_change_client_name'>
                         Can moderators change client name in jobs.
                       </label>

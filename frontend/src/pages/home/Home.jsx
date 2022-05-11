@@ -82,7 +82,7 @@ function Home(props) {
               <div className='logotitle-container'>
                 <img
                   src={darkMode ? logoWhite : logoColored}
-                  alt='21Xage Logo'
+                  alt='Logo'
                   className='logo'
                 />
                 <p className='logo-text'>

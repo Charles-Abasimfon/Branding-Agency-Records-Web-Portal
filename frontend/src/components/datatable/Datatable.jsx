@@ -1,7 +1,6 @@
 import { useState, useEffect, useContext, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { DataGrid } from '@mui/x-data-grid';
-import EditIcon from '@mui/icons-material/Edit';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import { AuthContext } from '../../context/authContext/AuthContext';
 import BrowserNotSupportedIcon from '@mui/icons-material/BrowserNotSupported';
@@ -200,7 +199,9 @@ function Datatable(props) {
           container={containerRef.current}
           rows={jobs}
           columns={
-            toDisplay === 'all-jobs' || toDisplay === 'late-jobs'
+            toDisplay === 'all-jobs' ||
+            toDisplay === 'late-jobs' ||
+            toDisplay === 'early-pending-jobs'
               ? columnsWithHowLate
               : columnsWithoutHowLate
           }
